@@ -1,0 +1,11 @@
+﻿body
+{
+}
+.chat_avatar {
+    border-radius: 50%;
+}
+.bordering{
+    width:50px;
+    height:50px;
+    border-radius:100%;
+}

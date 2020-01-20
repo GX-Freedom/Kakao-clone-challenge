@@ -1,0 +1,78 @@
+.friends .friends__plus {
+    padding: 20px 0px;
+    border-top: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
+    margin: 20px 0px;
+  }
+  
+  .friends__plus .friends__title,
+  .friends__list .friends__title {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-bottom: 12px;
+  }
+  
+  .friends__plus img:hover, .friends__list img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    border: 2px solid rgba(69, 69, 245, 0.541);
+
+  }
+
+  @keyframes avatar_color{
+    from{
+      transform: scale(0.8);
+      border: 2px solid rgb(255, 0, 0);
+
+    }
+    50%{
+      transform: scale(1.2);
+
+      border: 2px solid rgb(9, 255, 0);
+
+    }
+    to{
+      transform: scale(1.5);
+
+      border: 2px solid rgb(0, 17, 255);
+
+    }
+
+  }
+
+  .friends img:hover{
+    cursor: pointer;
+
+    animation: avatar_color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+  }
+
+  .friend__now-listening{
+    display: inline-block;
+    background-image: linear-gradient( rgb(255, 0, 0), rgb(51, 255, 0),rgb(25, 0, 255));
+
+    animation: gradient;
+    animation-duration: 0.45s;
+    animation-iteration-count: infinite;
+
+  }
+
+
+  @keyframes gradient{
+    from{
+      background-image: linear-gradient( rgb(255, 0, 0), rgb(51, 255, 0),rgb(25, 0, 255));
+
+    }
+    50%
+    {
+      background-image: linear-gradient( #1E9600, rgb(255, 0, 0),rgb(4, 0, 255));
+
+    }
+    to{
+      background-image: linear-gradient( #1E9600, #FFF200,#FF0000);
+
+    }
+
+  }

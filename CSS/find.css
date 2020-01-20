@@ -1,0 +1,55 @@
+.find{
+    margin-top: 50px;
+}
+
+.find .find_header-list{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.find .header-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.find .header-btn_title{
+    margin-top: 20px;
+    font-size: 14px;
+
+}
+.find .header-btn_icon{
+    font-size: 12px;
+}
+.find .find_recommended{
+    margin-top:30px;
+    padding-top:  15px;
+    border-top: 5px solid #f30404;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.find .find_title{
+    font-size: 12px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.header-btn_icon i:hover{
+    cursor: pointer;
+    border: 2px solid red;
+    border-radius: 100%;
+    padding: 5px;
+    background-color: white;
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.header-btn_icon i{
+    background-color: rgb(199, 199, 199);
+    border-radius: 100%;
+    border: 2px solid white;
+    opacity: 0.7;
+    padding: 4px;
+}
+
