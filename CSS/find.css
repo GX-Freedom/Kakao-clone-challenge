@@ -21,6 +21,9 @@
 .find .header-btn_icon{
     font-size: 12px;
 }
+.find .friend_add-btn:hover{
+    cursor: pointer;
+}
 .find .find_recommended{
     margin-top:30px;
     padding-top:  15px;

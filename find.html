@@ -9,6 +9,18 @@
 
 </head>
 
+<script>
+    function friendadd() {
+        var value = confirm("친구 추가 하시겠습니까?");
+        if (value == true) {
+            return "친구 추가 완료!";
+        }
+        else {
+            return "친구 추가 취소!";
+        }
+    }
+</script>
+
 <body>
 
     <div class="status-bar">
@@ -98,7 +110,7 @@
                     </div>
                 </div>
                 <div class="friend_column friend">
-                    <div class="friend_add-btn">
+                    <div class="friend_add-btn" id="fadd" onclick="alert(friendadd())">
                         <i class="fas fa-user-plus"></i>
                     </div>
                 </div>

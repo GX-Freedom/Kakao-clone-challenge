@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
 </head>
+<script>
+    function ad() {
+        var value = confirm("해당 제품을 구매 하시겠습니까?");
+        if (value == true) {
+            return "※★주문 완료!★※";
+        }
+        else {
+            return "주문 취소!";
+        }
+    }
+</script>
 
 <body>
 
@@ -72,7 +83,7 @@
                                 </span>
 
                             </div>
-                            <div class="ad">AD::Click</div>
+                            <div class="ad" onclick="alert(ad())">AD::Click</div>
 
 
                         </span>
