@@ -55,7 +55,12 @@
     opacity: 0.7;
     padding: 4px;
 }
-
+.find_friend{
+    margin-bottom:1.4rem
+}
+.friend_add-btn{
+    font-size: 1.15rem;
+}
 
 @keyframes search {
     0% {
@@ -92,3 +97,43 @@
 
 
  } 
+
+ @keyframes avatar_ani{
+     0%{
+         
+        background-image: linear-gradient(to top, #1E9600, #FFF200,#FF0000);
+
+     }
+     30%{
+        background-image: linear-gradient(to right, #FF0000, #1E9600,#FFF200);
+
+     }
+     60%{
+        background-image: linear-gradient(to bottom, #FFF200, #FF0000,#1E9600);
+
+     }
+     100%{
+        background-image: linear-gradient(to left, #FFF200, #1E9600,#FF0000);
+
+     }
+ }
+
+ .friend_column{
+     opacity: 0.8;
+ }
+ .friend_column:hover{
+     cursor: pointer;
+     opacity: 1;
+ }
+
+ .friend_column img:active{
+    transform: scale(3);
+    margin: 0px auto;
+    border:  1px solid red;
+    padding: 1px;
+    background-color: rgb(230, 230, 230);
+
+    animation: avatar_ani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+ }

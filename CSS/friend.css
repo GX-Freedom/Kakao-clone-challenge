@@ -15,7 +15,9 @@
   .friend__avatar.m-avatar {
     width: 60px;
   }
-  
+  .friends__friend{
+    margin-bottom: 1rem;
+  }
   .friend .friend__column {
     display: flex;
     align-items: center;
@@ -78,7 +80,6 @@
   .ad{
     display: inline-block;
     margin-left: 3rem;
-    background-image: url(../images/food_img_001.jpg);
     background-size: 50%;
     border: 2px solid red;
     border-radius: 20px;
@@ -86,6 +87,10 @@
     color: white;
     box-shadow: 1px 3px 3px 3px blue;
     font-weight: 200;
+    animation: adanimation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
   }
   .ad:hover {
     cursor: pointer;
@@ -94,6 +99,25 @@
 
   .ad:active{
     transform: translateY(9px);
+
+  }
+  
+  @keyframes adanimation{
+    0%{
+      background-image: url(../images/food_img_001.jpg);
+    }
+    35%{
+      background-image: url(../images/food_img_002.jpg);
+
+    }
+    60%{
+      background-image: url(../images/food_img_003.jpg);
+
+    }
+    100%{
+      background-image: url(../images/food_img_004.jpg);
+
+    }
 
   }
 

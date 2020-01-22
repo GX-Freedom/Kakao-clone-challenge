@@ -5,10 +5,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
-
 }
+.more .more_btn-list i:hover,
+.more .more_suggestions-list i:hover,
+.suggestion_icon:hover{
+
+    transform :scale(1.2);
+}
+
+
 .more_btn-list .more_btn,
 .more .suggestion{
     margin-right: 40px;
@@ -31,6 +36,15 @@
 .more .more_title{
     opacity: 0.8;;
     margin-bottom:  20px;
+}
+.more .friend_column img{
+    transform: scale(1.5);
+}
+.more .friend_content > span{
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+
 }
 
 .suggestion .suggestion_title{
