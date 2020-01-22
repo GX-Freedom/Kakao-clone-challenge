@@ -1,6 +1,12 @@
 body{
   height: 2000px;
 }
+.header .header__icon
+{
+  display: inline-flex;
+}
+
+
 .header-wrapper {
     position: fixed;
     z-index: 2;
@@ -223,7 +229,7 @@ body{
     opacity: 0.5;
     margin: 10px;
   }
-  .chat__write--container i:hover{
+  .chat__write--container:hover{
     cursor: pointer;
   }
   
@@ -259,6 +265,5 @@ body{
 
   animation: search 3s;
   opacity: 1;
-
-
 } 
+
